@@ -12,7 +12,7 @@
 const { Sequelize } = require("sequelize");
 const express = require("express");
 const app = express();
-const sequelize = new Sequelize("postgres://user:pass@example.com:5432/dbname"); // Example for postgres
+const sequelize = new Sequelize("postgres://user:ostentapp@database-eventosapp.cgm72eza25xd.us-east-1.rds.amazonaws.com:5432/eventosapp"); // Example for postgres
 
 app.get("/", (req, res) => res.send("Hello worls with express!"));
 app.get("/test-connection", (req, res) => testConnection(res));
