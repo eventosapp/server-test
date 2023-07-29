@@ -24,6 +24,6 @@ async function testConnection(res) {
     await sequelize.authenticate();
     res.send("Connection");
   } catch (error) {
-    res.send("Error");
+    res.send("Error " + error);
   }
 }
